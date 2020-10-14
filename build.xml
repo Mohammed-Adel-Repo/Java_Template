@@ -1,4 +1,10 @@
 <?xml version="1.0"?>
+<path id="ivy.lib.path">
+    <fileset dir="/opt/bitnami/jenkins/jenkins_home/.ant/lib/ivy.jar" includes="*.jar"/>
+</path>
+<taskdef resource="org/apache/ivy/ant/antlib.xml"
+         uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+
 <project name="SampleLwjglProject" xmlns:ivy="antlib:org.apache.ivy.ant">
 
   <!-- Project-specific configuration -->
